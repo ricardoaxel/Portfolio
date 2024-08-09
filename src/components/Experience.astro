@@ -1,0 +1,34 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCES = [
+    {
+        date: "Febrary 2022",
+        title: "Application UI date",
+        description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos culpa nisi, inventore itaque id aperiam, explicabo in magni deleniti quis officia quibusdam excepturi ipsa eius, quaerat molestiae incidunt? Dolores, quod?",
+    },
+    {
+        date: "March 2020",
+        title: "2Applica4tion UI date",
+        description:
+            "2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos culpa nisi, inventore itaque id aperiam, explicabo in magni deleniti quis officia quibusdam excepturi ipsa eius, quaerat molestiae incidunt? Dolores, quod?",
+    },
+    {
+        date: "January 2019",
+        title: "3Application UI date",
+        description:
+            "3Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos culpa nisi, inventore itaque id aperiam, explicabo in magni deleniti quis officia quibusdam excepturi ipsa eius, quaerat molestiae incidunt? Dolores, quod?",
+    },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3 pl-5">
+    {
+        EXPERIENCES.map((experience) => (
+            <li>
+                <ExperienceItem {...experience} />
+            </li>
+        ))
+    }
+</ol>
