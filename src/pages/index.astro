@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Badge.astro";
 import Badge from "../components/Badge.astro";
 import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import SocialPill from "../components/SocialPill.astro";
@@ -8,7 +7,10 @@ import GithubIcon from "../icons/GithubIcon.astro";
 import MailIcon from "../icons/MailIcon.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import BriefCase from "../icons/BriefCase.astro";
+import BriefCase from "../icons/BriefCaseIcon.astro";
+import BriefCaseIcon from "../icons/BriefCaseIcon.astro";
+import CodeIcon from "../icons/CodeIcon.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
@@ -16,7 +18,7 @@ import BriefCase from "../icons/BriefCase.astro";
     description="Apasionado por transformar ideas de UX/UI a código"
 >
     <main class="px-4">
-        <SectionContainer class="py-14 pb-24">
+        <SectionContainer class="py-14 pb-32">
             <img
                 class="rounded-full size-20 mb-4"
                 src="../../assets/images/me.jpeg"
@@ -56,10 +58,17 @@ import BriefCase from "../icons/BriefCase.astro";
         </SectionContainer>
         <SectionContainer id="experience">
             <h2 class="text-4xl font-semibold mb-6 flex gap-x-3 items-center">
-                <BriefCase class="size-8" />
+                <BriefCaseIcon class="size-8" />
                 Experiencia laboral
             </h2>
             <Experience />
+        </SectionContainer>
+        <SectionContainer id="projects">
+            <h2 class="text-4xl font-semibold mb-6 flex gap-x-3 items-center">
+                <CodeIcon class="size-8" />
+                Projectos
+            </h2>
+            <Projects />
         </SectionContainer>
     </main>
 </Layout>
